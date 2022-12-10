@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-ms-deployment
+  labels:
+    app: hello-ms-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-con
+  template:
+    metadata:
+      labels:
+        app: hello-con
+    spec:
+      containers:
+      - name: hello-con
+        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:spring-boot-hello
+        ports:
+        - containerPort: 8081
+
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: "1"
+          requests:
+            memory: 128Mi
+            cpu: "0.2"

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-ui-deployment
+  labels:
+    app: hello-ui-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-ui-con
+  template:
+    metadata:
+      labels:
+        app: hello-ui-con
+    spec:
+      containers:
+      - name: hello-ui-con
+        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:hello-angular-ui
+        env: 
+        - name: empMgmtApiUrl
+          valueFrom:
+            configMapKeyRef: 
+              name: hello-app-config
+              key: helloApiUrl
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: 512Mi
+            cpu: "1"
+          requests:
+            memory: 128Mi
+            cpu: "0.2"        
+
+---
