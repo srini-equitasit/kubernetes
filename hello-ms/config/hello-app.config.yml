@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: hello-app-config
 data:  
-  helloApiUrl: http://emp-micro-service:8081/emp
+  helloApiUrl: http://hello-service:8081/emp
   
