@@ -18,7 +18,7 @@ spec:
       - name: hello-ui-con
         image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:hello-angular-ui
         env: 
-        - name: empMgmtApiUrl
+        - name: helloApiUrl
           valueFrom:
             configMapKeyRef: 
               name: hello-app-config
