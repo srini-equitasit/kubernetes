@@ -11,5 +11,5 @@ spec:
     app: hello-ui-con
   ports:
     - protocol: TCP
-      port: 4200
+      port: 80
       targetPort: 80
