@@ -1,5 +1,9 @@
 echo 'clean up existing  pods and services '
 
+kubectl delete -f ../service/hello-ui-load-balacer-service-app.yml
+
+kubectl delete -f ../service/hello-load-balancer-service.yml
+
 kubectl delete  -f ../service/hello-ui-service-app.yml
 
 kubectl delete  -f ../service/hello-service.yml
