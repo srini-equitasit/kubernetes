@@ -25,7 +25,7 @@ spec:
        image: fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch
        env:
          - name:  FLUENT_ELASTICSEARCH_HOST
-           value: "localhost" # Or the host of your elasticsearch server
+           value: "ec2-44-205-18-45.compute-1.amazonaws.com" # Or the host of your elasticsearch server
          - name:  FLUENT_ELASTICSEARCH_PORT
            value: "9200" # The port that your elasticsearch API is exposed on
          - name: FLUENT_ELASTICSEARCH_SCHEME
