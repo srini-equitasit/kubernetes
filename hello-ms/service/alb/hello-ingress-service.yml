@@ -8,7 +8,8 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - http:
+    - host: ui
+      http:
         paths:
         - path: /
           pathType: Prefix
@@ -17,10 +18,14 @@ spec:
               name: hello-ui-service
               port:
                 number: 80
-        - path: /api
+    - host: api
+      http:
+        paths:
+        - path: /
           pathType: Prefix
           backend:
             service:
               name: hello-service
               port:
                 number: 80                
+             
