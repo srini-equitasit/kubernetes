@@ -17,8 +17,8 @@ spec:
        k8s-app: fluentd-logging # This label will help group your daemonset pods
        version: v1
    spec:
-     serviceAccount: fluentd
-     serviceAccountName: fluentd
+    #  serviceAccount: fluentd
+    #  serviceAccountName: fluentd
      tolerations:
      - key: node-role.kubernetes.io/master
        effect: NoSchedule # This will ensure fluentd collects master logs too
