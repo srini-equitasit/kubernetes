@@ -34,10 +34,11 @@ spec:
         - name: elastic-search
           image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
           env: 
-            - cluster.name=k8s-elastic-cluster
-            - discovery.type=single-node
-            - bootstrap.memory_lock=true
-            - "ES_JAVA_OPTS=-Xms512m -Xmx512m"        
+            - name: cluster.name
+              value: k8s-elastic-cluster
+            - name: discovery.type
+              value: single-node
+      
           ports:
           - containerPort: 9200
 
@@ -65,4 +66,4 @@ spec:
     - protocol: TCP
       port: 9200
       targetPort: 9200
-      # nodePort: 30010           
+      # nodePort: 30010
