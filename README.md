@@ -6,6 +6,8 @@ kubectl exec --stdin --tty mysql-546747ff76-7hm7h -- /bin/bash
 ## logging
 https://coralogix.com/blog/kubernetes-logging-with-elasticsearch-fluentd-and-kibana/
 
+https://mherman.org/blog/logging-in-kubernetes-with-elasticsearch-Kibana-fluentd/
+
 ## access minikube dashboard (run below commands in local system not from vm)
 https://plainenglish.io/blog/running-kubernetes-using-minikube-cluster-on-the-aws-cloud
 
