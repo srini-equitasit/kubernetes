@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-ui-con
-        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:hello-angular-ui
+        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:hello-angular-ui-latest
         env: 
         - name: helloApiUrl
           valueFrom:
