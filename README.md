@@ -22,3 +22,5 @@ https://medium.com/@gurpreets0610/deploy-prometheus-grafana-on-kubernetes-cluste
 https://blog.marcnuri.com/prometheus-grafana-setup-minikube
 
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
+
+https://devopscube.com/setup-kube-state-metrics/
