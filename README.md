@@ -18,3 +18,5 @@ ssh -i CICD_PIPELINE.pem -L 8091:localhost:39469 ec2-user@3.219.28.64
 
 ## monitoring
 https://medium.com/@gurpreets0610/deploy-prometheus-grafana-on-kubernetes-cluster-e8395cc16f91
+
+https://blog.marcnuri.com/prometheus-grafana-setup-minikube

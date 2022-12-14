@@ -1,0 +1,10 @@
+#  commands
+# kubectl apply -k .
+# kubectl delete -k .
+
+resources:
+    - elastic-search.yml
+    - kibana.yml
+    # - rbac.yml
+    - fluentd-daemonset.yaml
+    - busybox.yaml

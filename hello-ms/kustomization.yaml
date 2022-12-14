@@ -1,0 +1,13 @@
+#  commands
+# kubectl apply -k .
+# kubectl delete -k .
+
+resources:
+    - config/hello-app.config.yml
+    - deployments/hello-deployment.yml
+    - deployments/hello-ui-deployment.yml
+    - service/hello-service.yml
+    - service/nlb/hello-load-balancer-service.yml
+    - service/hello-ui-service-app.yml
+    - service/nlb/hello-ui-load-balacer-service-app.yml
+    - service/alb/hello-ingress-service.yml  
