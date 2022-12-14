@@ -4,6 +4,8 @@ resources:
     - prometheus/config.yaml
     - prometheus/deployment.yaml
     - prometheus/service.yaml
+    - node-exporter/daemonset.yaml
+    - node-exporter/service.yaml
 
     - grafana/pvc.yaml
     - grafana/config.yaml
