@@ -24,3 +24,10 @@ https://blog.marcnuri.com/prometheus-grafana-setup-minikube
 https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
 
 https://devopscube.com/setup-kube-state-metrics/
+
+## dashboards
+https://blog.lwolf.org/post/going-open-source-in-monitoring-part-iii-10-most-useful-grafana-dashboards-to-monitor-kubernetes-and-services/
+
+https://grafana.com/grafana/dashboards/13838-kubernetes-overview/
+
+https://grafana.com/grafana/dashboards/14623-kubernetes-monitoring-overview/

@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-ui-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello-ui-con
@@ -27,7 +27,7 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            memory: 512Mi
+            memory: 256Mi
             cpu: "1"
           requests:
             memory: 128Mi
