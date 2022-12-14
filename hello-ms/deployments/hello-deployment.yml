@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-con
-        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:spring-boot-hello-9
+        image: 337901474843.dkr.ecr.us-east-1.amazonaws.com/equitas-it:spring-boot-hello-10
         ports:
         - containerPort: 8081
 
