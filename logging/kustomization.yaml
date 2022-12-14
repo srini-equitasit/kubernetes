@@ -3,8 +3,9 @@
 # kubectl delete -k .
 
 resources:
-    - elastic-search.yml
-    - kibana.yml
+    - namespace.yaml
+    - setup/elastic-search.yml
+    - setup/kibana.yml
     # - rbac.yml
-    - fluentd-daemonset.yaml
-    - busybox.yaml
+    - setup/fluentd-daemonset.yaml
+    - app/busybox.yaml
