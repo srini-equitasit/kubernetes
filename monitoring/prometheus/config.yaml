@@ -139,3 +139,8 @@ data:
         - source_labels: [__meta_kubernetes_service_name]
           action: replace
           target_label: kubernetes_name
+      - job_name: 'spring_micrometer'
+        metrics_path: '/actuator/prometheus'
+        scrape_interval: 5s
+        static_configs:
+          - targets: ['YOUR-MACHINE-IP:8080']      
