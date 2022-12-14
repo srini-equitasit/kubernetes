@@ -1,12 +1,7 @@
 resources:
     - namespace.yaml
     # - prometheus/pvc.yaml
-    - prometheus/config.yaml
-    - prometheus/clusterRole.yaml
-    - prometheus/deployment.yaml
-    - prometheus/service.yaml
-
-    - grafana/pvc.yaml
-    - grafana/config.yaml
-    - grafana/deployment.yaml
-    - grafana/service.yaml    
+    - config.yaml
+    - clusterRole.yaml
+    - deployment.yaml
+    - service.yaml  
