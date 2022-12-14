@@ -20,7 +20,9 @@ spec:
           image: docker.elastic.co/kibana/kibana:7.6.2
           env: 
             - name: ELASTICSEARCH_URL
-              value: http://elastic-search:9200            
+              value: http://elastic-search:9200
+            - name: ELASTICSEARCH_HOSTS
+              value: '["http://elastic-search:9200"]'
           ports:
           - containerPort: 5601
 
