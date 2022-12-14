@@ -6,7 +6,7 @@ resources:
     - prometheus/deployment.yaml
     - prometheus/service.yaml
 
-    # - grafana/pvc.yaml
-    # - grafana/config.yaml
-    # - grafana/deployment.yaml
-    # - grafana/service.yaml    
+    - grafana/pvc.yaml
+    - grafana/config.yaml
+    - grafana/deployment.yaml
+    - grafana/service.yaml    
